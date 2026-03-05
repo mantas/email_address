@@ -31,7 +31,8 @@ class TestLocal < MiniTest::Test
       %(john..doe),
       %( invalid),
       %(invalid ),
-      %(abc"defghi"xyz)
+      %(abc"defghi"xyz),
+      %()
     ].each do |local|
       assert_equal false, EmailAddress::Local.new(local, local_fix: false).standard?, local
     end
