@@ -11,6 +11,7 @@ class TestLocal < MiniTest::Test
       %{"(comment)very.unusual.@.unusual.com"},
       %(#!$%&'*+-/=?^_`{}|~),
       %(" "),
+      %(""),
       %{"very.(),:;<>[]\\".VERY.\\"very@\\ \\"very\\".unusual"},
       %{"()<>[]:,;@\\\"!#$%&'*+-/=?^_`{}| ~.a"},
       %(token." ".token),
